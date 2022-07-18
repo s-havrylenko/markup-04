@@ -29,11 +29,26 @@
                     </ul>
                 </nav>
                 
-                <ul class="contact-nav list icon">
+                <ul class="contact-nav list">                    
+                    <!-- вставляли иконки при помощи  тега img-->
                     <!-- <img src="./images/icon-gmail.svg" alt="Иконка электронная почта"> -->
-                    <li class="item icon-gmail"><a href="" class="link">info@webstudio.com</a></li>
+                    <li class="item">
+                        <a href="" class="link contact-icon">
+                            <svg class="icon-gmail">
+                                <use href="./images/sprite.svg#icon-gmail"></use>
+                            </svg>
+                            info@webstudio.com
+                        </a>
+                    </li>
+                    
                     <!-- <img src="./images/icon-smartphone.svg" alt="Иконка телефон"> -->
-                    <li class="item icon-smartphone"><a href="" class="link">+38 077 777 7777</a></li>
+                    <li class="item">
+                        <a href="" class="link contact-icon">
+                            <svg class="icon-smartphone">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                        +38 077 777 7777</a>                    
+                    </li>
                 </ul>
             </div>
         </div>
@@ -49,27 +64,49 @@
         <!--Секция Наши прeимущества -->
         <section class="feature">
             <div class="container">
-                <h2 class="section-title">Наши преимущества</h2>
+                <h2 class="section-title">Наши преимущества</h2>               
                 <ul class="feature list images">
-                    <li class="item images-antenna">
-                      <!-- <img src="./images/antenna.svg" alt="Схематическое изображение спутниковой антены"> -->
+                    <li class="item">
+                        <div class="background-icon" aria-label="изображение aнтенна">
+                            <!-- <span class="vsiually-hidden">изображение aнтенна</span> -->
+                            <svg class="icon-antenna" width="65.32" height="70">
+                                <use href="./images/sprite.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <!-- вставляли иконки при помощи  тега img-->
+                        <!-- <img src="./images/antenna.svg" alt="Схематическое изображение спутниковой антены"> -->
                         <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                         <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
 
-                    <li class="item images-clock">
+                    <li class="item">
+                        <div class="background-icon">
+                            <svg class="icon-clock" width="66.96" height="70">
+                                <use href="./images/sprite.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <!-- <img src="./images/clock.svg" alt="Схематическое изображение механического циферблата часов"> -->
                         <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
                         <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
 
-                    <li class="item images-diagram">
+                    <li class="item">
+                        <div class="background-icon">
+                            <svg class="icon-diagram" width="70" height="53.69">
+                                <use href="./images/sprite.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
                         <!-- <img src="./images/diagram.svg" alt="Схематическое изображение диаграммы"> -->
                         <h3 class="title">ПЛАНИРОВАНИЕ</h3>
                         <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
 
-                    <li class="item images-astronaut">
+                    <li class="item">
+                        <div class="background-icon">
+                            <svg class="icon-astronaut" width="70" height="70">
+                                <use href="./images/sprite.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
                         <!-- <img src="./images/astronaut.svg" alt="Схематическое изображение астронафта в космосе"> -->
                         <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                         <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
@@ -111,7 +148,16 @@
                         <h3 class="title">Николай Кучеренко</h3>
                         <p class="text">Product Designer</p>
                         <ul class="team-sn list">
-                            <li class="item"><a href=""><img src="./images/icon-instagram.svg" alt="Иконка Instagram"></a></li>
+                            <li class="item">
+                                <a href=""><img src="./images/icon-instagram.svg" alt="Иконка Instagram">
+                                <!-- <a href="" class="link">
+                                    <div class="background-networks">
+                                        <svg class="icon-instagram">
+                                            <use href="./images/sprite1.svg#icon-instagram"></use>
+                                        </svg>
+                                    </div>
+                                </a> -->
+                            </li>
                             <li class="item"><a href=""><img src="./images/icon-twitter.svg" alt="Иконка Twitter"></a></li>
                             <li class="item"><a href=""><img src="./images/icon-facebook.svg" alt="Иконка Facebook"></a></li>
                             <li class="item"><a href=""><img src="./images/icon-ln.svg" alt="Иконка LinkedIn"></a></li>

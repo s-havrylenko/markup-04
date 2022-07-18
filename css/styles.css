@@ -101,6 +101,7 @@ nav {
 .contact-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .contact-nav .item:not(:last-child) {
@@ -112,6 +113,7 @@ nav {
   padding-bottom: 32px;
 
   color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -124,18 +126,47 @@ nav {
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-color);
+  /* stroke: var(--accent-color); */
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 
-.icon .item::before {
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-gmail {
+  width: 25px;
+  height: 18px;  
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  width: 15px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+ /* вставляли иконки при помощи тега img */
+/* .icon-gmail {
+  display: inline-flex;
+  width: 16px;
+  height: 11.2px;
+  padding-right: 10px;
+} */
+
+/* .icon .item::before {
   display: inline-flex;
   content: "";
   margin-right: 5px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-}
+} */
 
-.icon .icon-gmail::before {
+/* .icon .icon-gmail::before {
   height: 10px;
   width: 14px;
   background-image: url("../images/icon-gmail.svg");
@@ -145,7 +176,7 @@ nav {
   height: 14px;
   width: 10px;
   background-image: url("../images/icon-smartphone.svg");
-}
+} */
 
 /* Герой */
 .hero {
@@ -220,38 +251,74 @@ section {
 .feature .item:nth-child(4n) {
   margin-right: 0px;
 }
-
-.images .item::before {
+/* вставляли иконки при помощи тега img */
+/* Заменим background-image на svg спрайты */
+/* .images .item::before {
   display: block;
   content: "";
   margin-bottom: 10px;
   height: 120px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   /* background-size: contain; */
-  background-position: center;
+  /* background-position: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+} */
+
+/* .images .images-antenna::before {
+  background-image: url("../images/antenna.svg");
+  background-size: auto; 
+} */
+
+/* .images .images-clock::before {
+  background-image: url("../images/clock.svg");
+  background-size: auto;
+} */
+
+/* .images .images-diagram::before {
+  background-image: url("../images/diagram.svg");
+  background-size: auto;
+} */
+
+/* .images .images-astronaut::before {
+  background-image: url("../images/astronaut.svg");
+  background-size: auto;
+} */
+
+.background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+
   background-color: #F5F4FA;
   border-radius: 4px;
 }
 
-.images .images-antenna::before {
-  background-image: url("../images/antenna.svg");
-  background-size: auto; 
-}
+/* .icon-antenna {
+  width: 65.32px;
+  height: 70px;
+  margin-top: 25px;
+  margin-left: 102.34px;
+} */
 
-.images .images-clock::before {
-  background-image: url("../images/clock.svg");
-  background-size: auto;
-}
+/* .icon-clock {
+  width: 66.96px;
+  height: 70px;
+  margin-top: 25px;
+  margin-left: 101.5px;
+} */
 
-.images .images-diagram::before {
-  background-image: url("../images/diagram.svg");
-  background-size: auto;
-}
+/* .icon-diagram {
+  width: 70px;
+  height: 53.69px;
+} */
 
-.images .images-astronaut::before {
-  background-image: url("../images/astronaut.svg");
-  background-size: auto;
-}
+/* .icon-astronaut {
+  width: 70px;
+  height:70px;
+} */
 
 .feature .title {
   margin-top: 0px;
@@ -325,12 +392,12 @@ section {
 }
 
 .team .title {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
 .team .text {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 16px;
 
   color: var(--secondary-text-color);
@@ -350,6 +417,28 @@ section {
 
 .team-sn .item:nth-child(4n) {
   margin-right: 0px;
+}
+
+.team .link {
+  fill: var(--secondary-text-color);
+}
+
+.background-networks {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primary-white-color)
+}
+
+
+.icon-instagram {
+  width: 40px;
+  height: 40px;
+  
+  fill: aqua;
 }
 
 /* Секция Постоянные клиенты */

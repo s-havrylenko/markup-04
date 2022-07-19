@@ -30,9 +30,24 @@
                 </nav>
 
                 <ul class="contact-nav list">
-                    <li class="item"><a href="" class="link"><img src="./images/icon-gmail.svg" alt="Иконка электронная почта">info@webstudio.com</a></li>
-                    <li class="item"><a href="" class="link"><img src="./images/icon-smartphone.svg" alt="Иконка телефон">+38 077 777 7777</a></li>
-                </ul>
+                    <!-- вставляли иконки при помощи  тега img-->
+                    <!-- <img src="./images/icon-gmail.svg" alt="Иконка электронная почта"> -->
+                    <li class="item">
+                        <a href="" class="link contact-icon">
+                            <svg class="icon-gmail">
+                                <use href="./images/sprite.svg#icon-gmail"></use>
+                            </svg>
+                            info@webstudio.com
+                        </a>
+                    </li>
+                
+                    <!-- <img src="./images/icon-smartphone.svg" alt="Иконка телефон"> -->
+                    <li class="item">
+                        <a href="" class="link contact-icon">
+                            <svg class="icon-smartphone">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 077 777 7777</a>
             </div>
         </div>
     </header>
@@ -43,7 +58,7 @@
             <div class="container">
                 <h1 class="section-title">Примеры работ</h1>
                 <div class="bar">
-                    <button type="button" class="button primary">Все</button>
+                    <button type="button" class="button secondery">Все</button>
                     <button type="button" class="button secondery">Веб-сайты</button>
                     <button type="button" class="button secondery">Приложения</button>
                     <button type="button" class="button secondery">Дизайн</button>
@@ -52,17 +67,17 @@
                    
                 <ul class="examples list">
                     <li class="item">
-                            <a href="" class="examples-link">
-                                <img src="./images/portfolio-1.jpg" alt="Синий фон" width="370">
-                                <p class="examples-descriptions">Технокряк это современная площадка распространения вируса. Компании
-                                    используют эту
-                                    платформу
-                                    для цифрового
-                                    шпионажа и атак на защищённые сервера конкурентов.
-                                </p>
-                                <h3 class="examples-title">Технокряк</h3>
-                                <p class="examples-text">Веб-сайт</p>
-                            </a>
+                        <a href="" class="examples-link">
+                            <img src="./images/portfolio-1.jpg" alt="Синий фон" width="370">
+                            <p class="examples-descriptions">Технокряк это современная площадка распространения вируса. Компании
+                                используют эту
+                                платформу
+                                для цифрового
+                                шпионажа и атак на защищённые сервера конкурентов.
+                            </p>
+                            <h3 class="examples-title">Технокряк</h3>
+                            <p class="examples-text">Веб-сайт</p>
+                        </a>
                     </li>
                     
                     <li class="item">
@@ -197,10 +212,41 @@
             <div class="footer-sn-flex">
                 <b>ПРИСОЕДИНЯЙТЕСЬ</b>
                 <ul class="footer-sn list">
-                    <li class="item"><a href=""><img src="./images/icon-instagram.svg" alt="Иконка Instagram"></a></li>
-                    <li class="item"><a href=""><img src="./images/icon-twitter.svg" alt="Иконка Twitter"></a></li>
-                    <li class="item"><a href=""><img src="./images/icon-facebook.svg" alt="Иконка Facebook"></a></li>
-                    <li class="item"><a href=""><img src="./images/icon-ln.svg" alt="Иконка Facebook"></a></li>
+                    <li class="item">
+                        <!-- <a href=""><img src="./images/icon-instagram.svg" alt="Иконка Instagram"></a> -->
+                        <a href="" class="background-networks-ft">
+                            <svg class="icon">
+                                <use href="./images/sprite.svg#icon-instagram-ft"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="item">
+                        <!-- <a href=""><img src="./images/icon-twitter.svg" alt="Иконка Twitter"></a> -->
+                        <a href="" class="background-networks-ft">
+                            <svg class="icon">
+                                <use href="./images/sprite.svg#icon-twitter-ft"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="item">
+                        <!-- <a href=""><img src="./images/icon-facebook.svg" alt="Иконка Facebook"></a> -->
+                        <a href="" class="background-networks-ft">
+                            <svg class="icon">
+                                <use href="./images/sprite.svg#icon-facebook-ft"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="item">
+                        <!-- <a href=""><img src="./images/icon-ln.svg" alt="Иконка Facebook"></a> -->
+                        <a href="" class="background-networks-ft">
+                            <svg class="icon">
+                                <use href="./images/sprite.svg#icon-linkedin-ft"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
     

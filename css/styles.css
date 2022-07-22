@@ -26,9 +26,7 @@ body {
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
-  padding-right: 15px;
-  /* временная для визуала */
-  /* outline: 2px solid teal; */
+  padding-right: 15px;  
 }
 
 /* Логотип */
@@ -126,8 +124,7 @@ nav {
 
 .contact-nav .link:hover,
 .contact-nav .link:focus {
-  color: var(--accent-color);
-  /* stroke: var(--accent-color); */
+  color: var(--accent-color);  
   fill: var(--accent-color);
   cursor: pointer;
 }
@@ -139,14 +136,14 @@ nav {
 }
 
 .icon-gmail {
-  width: 25px;
-  height: 18px;  
+  width: 18px;
+  height: 14px;  
   margin-right: 10px;
 }
 
 .icon-smartphone {
-  width: 15px;
-  height: 20px;
+  width: 11px;
+  height: 16px;
   margin-right: 10px;
 }
 
@@ -185,6 +182,7 @@ nav {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 94px;
   background-color: #2f303a;
   background-image: linear-gradient(
       to right,
@@ -221,11 +219,6 @@ section {
   padding-top: 0px;
   padding-bottom: 95px;
 }
-
-/* .section.no-padding {
-  padding-top: 0px;
-  padding-bottom: 0px;
-} */
 
 .section-title {
   margin-top: 0;
@@ -286,6 +279,19 @@ section {
   background-size: auto;
 } */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .background-icon {
   display: flex;
   justify-content: center;
@@ -328,6 +334,7 @@ section {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14em;
+  text-transform: uppercase;
 }
 
 .feature .text {
@@ -410,6 +417,7 @@ section {
 .team-sn {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .team-sn .item {
@@ -471,36 +479,6 @@ section {
   background-color: var(--primary-white-color)
 }
 
-.client-1 {
-  width: 44.27px;
-  height: 49.23px;
-}
-
-.client-2 {
-  width: 40px;
-  height: 52px;
-}
-
-.client-3 {
-  width: 41px;
-  height: 42.6px;
-}
-
-.client-4 {
-  width: 79.66px;
-  height: 42.02px;
-}
-
-.client-5 {
-  width: 59px;
-  height: 47px;
-}
-
-.client-6 {
-  width: 88.48px;
-  height: 45.44px;
-}
-
 .background-clients:hover,
 .background-clients:focus {
   border: 1px solid var(--accent-color);
@@ -509,7 +487,6 @@ section {
 
 /* Секция Подвал */
 footer {
-  height: 252px;
   background-color: #2f303a;
 
   color: var(--primary-white-color);
@@ -518,6 +495,8 @@ footer {
 .mein-footer {
   display: flex;
   align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-address {
@@ -525,12 +504,12 @@ footer {
   flex-wrap: wrap;
   width: 300px;
   margin-right: 69px;
-  margin-top: 50px;
 }
 
 .address {
   margin-top: 20px;
   
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71em;
 }
@@ -539,22 +518,22 @@ footer {
   color: var(--secondary-text-color);
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.02em;
 }
 
-.footer-sn-flex {
-  margin-top: 50px;
-}
-
-b {
+.call {
+  display: flex;
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 1.71em;
+  text-transform: uppercase;
 }
 
-.b {
+.footer-call {
   margin-right: 15px;
+
+  font-size: 14px;
+  line-height: 1.71em;
+  text-transform: uppercase;
 }
 
 .footer-sn {
@@ -565,10 +544,9 @@ b {
   margin-right: 15px;
 }
 
-.footer-and {
+.footer-send {
   display: flex;
   margin-left: auto;
-  margin-top: 50px;
   align-items: center;
 }
 
@@ -594,6 +572,17 @@ b {
   background-color: var(--accent-color);
 }
 
+.send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-send {  
+  margin-left: 10px;
+}
+
+
 /* Button */
 .button {
   border: none;
@@ -618,6 +607,10 @@ b {
   background-color: var(--accent-color);
 }
 
+.button.primary:hover {
+  cursor: pointer;
+}
+
 .button.secondery {
   color: var(--primary-text-color);
   /* background-color: #f5f4fa; */
@@ -628,6 +621,7 @@ b {
 .bar .button.secondery:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* Портфолио */
@@ -638,14 +632,12 @@ b {
   padding-bottom: 20px;
   padding-left: 15px;
   padding-right: 15px;
-  /* временная для визуала */
-  /* outline: 2px solid teal; */
 }
 
 .bar {
   text-align: center;
 
-  margin-bottom: 15px;
+  margin-bottom: 54px;
 }
 
 .examples {
@@ -655,14 +647,11 @@ b {
 }
 
 .examples .item {
-  /* width: 380px; */
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 
   border: 1px solid #EEEEEE;
-
-  /* background-color: rgb(95, 43, 148); */
 }
 
 /* Убирает крайн. геометрию у каждого третего */
